@@ -1,10 +1,20 @@
 LOCAL_PATH := $(call my-dir)
+LIBUSB_ROOT_REL:= ../..
+LIBUSB_ROOT_ABS:= $(LOCAL_PATH)/../..
+
 
 include $(CLEAR_VARS)
 
 LOCAL_CFLAGS += -std=c99
 LOCAL_MODULE    := v-ir
 LOCAL_SRC_FILES := v-ir.c
+
+LOCAL_C_INCLUDES += \
+  $(LIBUSB_ROOT_ABS)/libusb
+
+#include $(BUILD_STATIC_LIBRARY)
+
+LOCAL_SHARED_LIBRARIES += libusb1.0
 
 include $(BUILD_EXECUTABLE)
 

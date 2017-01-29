@@ -1,0 +1,15 @@
+
+cd sdcard/v-ir
+sh ./v-ir
+
+sh ./dpfp
+sh ./dpfp_threaded
+sh ./fxload
+sh ./hotplugtest
+sh ./libusb1.0.so
+sh ./listdevs
+sh ./sam3u_benchmark
+sh ./stress
+sh ./xusb
+
+
