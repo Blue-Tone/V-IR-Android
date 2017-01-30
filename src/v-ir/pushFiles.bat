@@ -1,14 +1,14 @@
 
-set dst=sdcard
-rem set dst=/data
+rem set dst=sdcard
+set dst=/data/local/tmp
 
 rem set src=libs\armeabi
 rem set src=libs\armeabi-v7a
 rem mips
 set src=libs\x86
 
-adb push %src%\libusb1.0.so %dst%/v-ir
-adb push %src%\v-ir %dst%/v-ir
+adb push %src%\libusb1.0.so %dst%/
+adb push %src%\v-ir %dst%/
 
 
 rem adb push libs\armeabi\dpfp /sdcard/v-ir

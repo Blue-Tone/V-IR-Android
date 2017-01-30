@@ -12,4 +12,8 @@ sh ./sam3u_benchmark
 sh ./stress
 sh ./xusb
 
-
+1|generic_x86:/data/local/tmp $ ./v-ir
+"./v-ir": error: only position independent executables (PIE) are supported.
+Aborted
+134|generic_x86:/data/local/tmp $
+C:\git\V-IR-Android\src\v-ir>

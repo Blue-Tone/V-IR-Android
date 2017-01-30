@@ -5,6 +5,9 @@ LIBUSB_ROOT_ABS:= $(LOCAL_PATH)/../..
 
 include $(CLEAR_VARS)
 
+LOCAL_CFLAGS += -fPIE
+LOCAL_LDFLAGS += -fPIE -pie
+
 LOCAL_CFLAGS += -std=c99
 LOCAL_MODULE    := v-ir
 LOCAL_SRC_FILES := v-ir.c
