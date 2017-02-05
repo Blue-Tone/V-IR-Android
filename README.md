@@ -14,19 +14,21 @@ ndk-build clean
 ndk-build 
 
 \libs\armeabiに「v-ir」ができる。
-多分、実行時にlibusb1.0.soをライブラリとして読み込んでいるはず。
+実行時にlibusb1.0.soをライブラリとして読み込んでいる。
+
+## androidにバイナリ転送
+adb devicesで接続確認
+接続できていれば、pushFiles.batを実行
+(接続する端末により、転送パス・モジュールは変更。)
+
+## 実行
+export LD_LIBRARY_PATH=/data/local/tmp
+cd /data/local/tmp
+sh ./v-ir
 
 
-1/30時点で、実行時にエラーになる。原因調査中。
-①
-255|root@android:/data/v-ir # sh ./v-ir
-./v-ir[3]: syntax error: '(' unexpected
 
-./v-ir[1]: syntax error: ?4pA4' unexpected
 
-②
-1|root@android:/data/v-ir # ./v-ir
-/system/bin/sh: ./v-ir: not executable: magic 7F45
 
 ## 参考メモ  
 

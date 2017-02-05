@@ -1,19 +1,15 @@
 
+export LD_LIBRARY_PATH=/data/local/tmp
 cd sdcard/v-ir
 sh ./v-ir
 
-sh ./dpfp
-sh ./dpfp_threaded
-sh ./fxload
-sh ./hotplugtest
-sh ./libusb1.0.so
-sh ./listdevs
-sh ./sam3u_benchmark
-sh ./stress
-sh ./xusb
 
-1|generic_x86:/data/local/tmp $ ./v-ir
-"./v-ir": error: only position independent executables (PIE) are supported.
-Aborted
-134|generic_x86:/data/local/tmp $
-C:\git\V-IR-Android\src\v-ir>
+ŽÀs—áF
+shell@grouper:/data/local/tmp $ ./v-ir
+USAGE:
+ V-IR [-r(raw)][-f freq][-v(verb)] R > FILE.ir  RECEIVE IR DATA & WRITE TO RAM
+ V-IR S < FILE.ir               TRANSMIT IR DATA & WRITE TO RAM
+ V-IR P                         SHOW IR DATA IN RAM
+ V-IR s                         SAVE DATA FROM RAM TO EEPROM
+ V-IR l                         LOAD DATA FROM EEPROM TO RAM & TRANSMIT IT
+ V-IR V                         SHOW INFO OF AVR-FIRMWARE
