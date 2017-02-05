@@ -22,9 +22,11 @@ adb devicesで接続確認
 (接続する端末により、転送パス・モジュールは変更。)
 
 ## 実行
+adb shell
 export LD_LIBRARY_PATH=/data/local/tmp
 cd /data/local/tmp
-sh ./v-ir
+chmod 0755 v-ir
+./v-ir
 
 
 
