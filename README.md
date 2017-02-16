@@ -9,24 +9,24 @@ https://akira-watson.com/android/adt-windows.html
 
 
 ## ビルド方法
-cd \V-IR-Android\src\v-ir
-ndk-build clean
-ndk-build 
-
-\libs\armeabiに「v-ir」ができる。
-実行時にlibusb1.0.soをライブラリとして読み込んでいる。
-
+cd \V-IR-Android\src\v-ir  
+ndk-build clean  
+ndk-build   
+  
+\libs\armeabiに「v-ir」ができる。  
+実行時にlibusb1.0.soをライブラリとして読み込んでいる。  
+  
 ## androidにバイナリ転送
-adb devicesで接続確認
-接続できていれば、pushFiles.batを実行
-(接続する端末により、転送パス・モジュールは変更。)
-
-## 実行
-adb shell
-export LD_LIBRARY_PATH=/data/local/tmp
-cd /data/local/tmp
-chmod 0755 v-ir
-./v-ir
+adb devicesで接続確認  
+接続できていれば、pushFiles.batを実行  
+(接続する端末により、転送パス・モジュールは変更。)  
+  
+## 実行 
+adb shell    
+export LD_LIBRARY_PATH=/data/local/tmp  
+cd /data/local/tmp  
+chmod 0755 v-ir  
+./v-ir  
 
 
 
@@ -45,5 +45,5 @@ http://stackoverflow.com/questions/15957509/compile-and-link-against-libusb-for-
 libusbのgithub  
 https://github.com/libusb/libusb
 
-Android NDK でネイティブ CUI プログラムを書く！
+Android NDK でネイティブ CUI プログラムを書く！  
 http://dsas.blog.klab.org/archives/51809744.html
