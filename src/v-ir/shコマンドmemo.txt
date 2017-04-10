@@ -1,0 +1,15 @@
+
+export LD_LIBRARY_PATH=/data/local/tmp
+cd sdcard/v-ir
+sh ./v-ir
+
+
+ŽÀs—áF
+shell@grouper:/data/local/tmp $ ./v-ir
+USAGE:
+ V-IR [-r(raw)][-f freq][-v(verb)] R > FILE.ir  RECEIVE IR DATA & WRITE TO RAM
+ V-IR S < FILE.ir               TRANSMIT IR DATA & WRITE TO RAM
+ V-IR P                         SHOW IR DATA IN RAM
+ V-IR s                         SAVE DATA FROM RAM TO EEPROM
+ V-IR l                         LOAD DATA FROM EEPROM TO RAM & TRANSMIT IT
+ V-IR V                         SHOW INFO OF AVR-FIRMWARE

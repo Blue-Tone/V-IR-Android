@@ -16,10 +16,13 @@
 #include <sys/types.h>
 #include "version.h"
 
+#define LINUX 1
+
 // Linux ではディストリビューションによって必要な方をインクルードする
 #if LINUX
-#include <libusb-1.0/libusb.h> 
+//#include <libusb-1.0/libusb.h> 
 //#include <libusb/libusb.h>
+#include <../../libusb/libusb.h>
 #endif
 
 #if FreeBSD
